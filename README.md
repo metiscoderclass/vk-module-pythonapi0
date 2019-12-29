@@ -1,25 +1,8 @@
-# Initial page
+# Introductie module
 
-## Getting Super Powers
+## API's
+Als programmeur kom je vaak de afkorting API tegen. Waar wat is een API? En wat is een Web API? In deze module ga je leren wat een API is en hoe je gebruik kunt maken van een paar leuke API's.
 
-Becoming a super hero is a fairly straight forward process:
+Als voorkennis is het handig als je minstens de Python-3 badge hebt behaald. Je moet vooral goed weten wat een dictionary is.
 
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
-
-
-
+Als vervolg van deze module zou je een specialisatie kunnen kiezen waarbij je zelf een API gaat maken voor een nuttige toepassing.
