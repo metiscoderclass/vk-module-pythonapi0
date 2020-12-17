@@ -1,0 +1,379 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python en JSON · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Les 2.3 Terug naar de OpenWeather data.html" />
+    
+    
+    <link rel="prev" href="Les 2.1 JSON.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introductie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Les 0: Stukje theorie.html">
+            
+                <a href="Les 0: Stukje theorie.html">
+            
+                    
+                    Wat is een API?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Les 1: De Wikipedia API.html">
+            
+                <a href="Les 1: De Wikipedia API.html">
+            
+                    
+                    De Wikipedia API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Les 2: De Weather API.html">
+            
+                <a href="Les 2: De Weather API.html">
+            
+                    
+                    De Weather API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Les 2.1 JSON.html">
+            
+                <a href="Les 2.1 JSON.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="Les 2.2 Python en JSON.html">
+            
+                <a href="Les 2.2 Python en JSON.html">
+            
+                    
+                    Python en JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                <a href="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                    
+                    OpenWeatherMap JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Eindopdracht.html">
+            
+                <a href="Eindopdracht.html">
+            
+                    
+                    Eindopdracht
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Python en JSON</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python-en-json">Python en JSON</h1>
+<p>Nu je weet wat JSON is en hoe het werkt, wordt het tijd om te kijken hoe je met de programmeertaal Python JSON objecten kunt gebruiken. Zoals je vanuit de afkorting al hebt kunt afleiden is JSON eigenlijk gebaseerd op JavaScript. Maar toch kunnen we het in elke programmeertaal gebruiken. Zo ook in Python.</p>
+<p>Allereerst moeten we de library json importeren:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> json
+</code></pre>
+<p>Als we nu een string hebben met daarin json, dan moeten we dat omzetten naar een echt json object. En dat is Python dan gewoon een dictionary. Dit omzetten doen we met de functie <code>json.loads()</code>. Voorbeeld:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> json
+
+json_string = <span class="hljs-string">&apos;&apos;&apos;
+{  
+  &quot;first_name&quot;  : &quot;Henk&quot;,
+  &quot;last_name&quot;   : &quot;Shark&quot;,
+  &quot;online&quot;      : true,
+  &quot;age&quot;         : 20
+}
+&apos;&apos;&apos;</span>
+
+object_person = json.loads(json_string)
+</code></pre>
+<p>De variabele object_person is nu een dictionary. Hij bevat 4 keys, te weten:</p>
+<ul>
+<li>first_name</li>
+<li>last_name</li>
+<li>online</li>
+<li>age</li>
+</ul>
+<p>Met de module Python-3 heb je geleerd hoe je dictionaries kan gebruiken. We printen de voornaam en achternaam uit:</p>
+<iframe height="500px" width="100%" src="https://repl.it/@hakkas/JSON-voorbeeld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<p>Laten we nu een iets complexer JSON string nemen. Eentje met een ander object als value.</p>
+<p>Schematisch ziet dat er zo uit:
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTP2wfgPzvzD798-G8AFsnpHi-K7qVQhv62Gy4ocyzzJHylOFe7vJYrH7DfpSH_FtKybp0TmPm-TSlV/pub?w=679&amp;h=382"></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;first_name&quot;</span>  : <span class="hljs-string">&quot;Henk&quot;</span>,
+  <span class="hljs-string">&quot;last_name&quot;</span>   : <span class="hljs-string">&quot;Shark&quot;</span>,
+  <span class="hljs-string">&quot;online&quot;</span>      : <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;age&quot;</span>         : <span class="hljs-number">20</span>,
+  <span class="hljs-string">&quot;address&quot;</span>     : {
+    <span class="hljs-string">&quot;street&quot;</span>        : <span class="hljs-string">&quot;Mauritskade&quot;</span>,
+    <span class="hljs-string">&quot;number&quot;</span>        : <span class="hljs-number">58</span>
+  }
+}
+</code></pre>
+<p>Willen we nu de straatnaam printen, dan doen we dat zo:</p>
+<pre><code class="lang-Python">print(<span class="hljs-string">&quot;Straatnaam: &quot;</span> + object_person[<span class="hljs-string">&quot;address&quot;</span>][<span class="hljs-string">&quot;street&quot;</span>])
+</code></pre>
+<p>Je hebt dus een dictionary <em>in</em> een dictionary.</p>
+<p>En nu een JSON object met een array erin. Arrays worden omgezet naar Python lijsten. Kijk goed naar het onderstaande voorbeeld:</p>
+<iframe height="400px" width="100%" src="https://repl.it/@hakkas/JSON-voorbeeld-3?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Les 2.1 JSON.html" class="navigation navigation-prev " aria-label="Previous page: JSON">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Les 2.3 Terug naar de OpenWeather data.html" class="navigation navigation-next " aria-label="Next page: OpenWeatherMap JSON">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python en JSON","level":"1.4.2","depth":2,"next":{"title":"OpenWeatherMap JSON","level":"1.4.3","depth":2,"path":"Les 2.3 Terug naar de OpenWeather data.md","ref":"Les 2.3 Terug naar de OpenWeather data.md","articles":[]},"previous":{"title":"JSON","level":"1.4.1","depth":2,"path":"Les 2.1 JSON.md","ref":"Les 2.1 JSON.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Les 2.2 Python en JSON.md","mtime":"2020-12-17T11:48:21.747Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:15:35.107Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

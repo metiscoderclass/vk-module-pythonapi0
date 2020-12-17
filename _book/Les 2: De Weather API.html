@@ -1,0 +1,390 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>De Weather API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Les 2.1 JSON.html" />
+    
+    
+    <link rel="prev" href="Les 1: De Wikipedia API.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introductie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Les 0: Stukje theorie.html">
+            
+                <a href="Les 0: Stukje theorie.html">
+            
+                    
+                    Wat is een API?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Les 1: De Wikipedia API.html">
+            
+                <a href="Les 1: De Wikipedia API.html">
+            
+                    
+                    De Wikipedia API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="Les 2: De Weather API.html">
+            
+                <a href="Les 2: De Weather API.html">
+            
+                    
+                    De Weather API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Les 2.1 JSON.html">
+            
+                <a href="Les 2.1 JSON.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Les 2.2 Python en JSON.html">
+            
+                <a href="Les 2.2 Python en JSON.html">
+            
+                    
+                    Python en JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                <a href="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                    
+                    OpenWeatherMap JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Eindopdracht.html">
+            
+                <a href="Eindopdracht.html">
+            
+                    
+                    Eindopdracht
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >De Weather API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="de-weather-api">De Weather API</h1>
+<h2 id="het-verschil">Het verschil</h2>
+<p>Tijdens de vorige les hebben we een API gebruikt waar je <em>geen</em> ApiKey voor nodig had. Nu gaan we met een API werken waar je dat <em>wel</em> nodig gaat hebben.</p>
+<h2 id="openweathermap">OpenWeatherMap</h2>
+<p>De API die we nu gaan gebruiken is de OpenWeatherMap (OWM). Het is gratis te gebruiken voor als je de huidige informatie over het weer wil hebben.</p>
+<p>Allereerst moeten we naar de website van OWM gaan. Je kunt bovenaan de pagina op de Sign Up knop drukken om een account aan te maken.
+Zodra je dat hebt gedaan ga je naar de tab API keys. Daar zie je een lange key met cijfers en letters: het is een supergroot hexadecimaal getal! Dat is de ApiKey die je nodig hebt!</p>
+<p>Laten we nu deze key veilig opslaan.</p>
+<h2 id="apikey-geheim-waarom">ApiKey, geheim? Waarom?</h2>
+<p>Waarom moeten ApiKey&apos;s eigenlijk geheim blijven?
+Omdat deze keys zijn gekoppeld aan jouw account. Als er dus misbruik wordt gemaakt van deze keys dan loop je kans dat jouw account wordt geblokkeerd. En dat willen we natuurlijk niet hebben!</p>
+<p>Hiervoor gebruiken we een bestand met de naam <code>.env</code>. Daar zetten we dan de ApiKey in en vanuit de code lezen we deze key uit dit bestand.</p>
+<p>Dus:</p>
+<ul>
+<li>Maak een bestand in je project en noem hem .env</li>
+<li>Zet vervolgens in dat bestand de regel: <code>APIKEY=(jouw api key)</code>
+Uiteraard moet je <code>(jouw api key)</code> vervangen door de key die je van OpenWeatherMap hebt gekregen.</li>
+<li>Sla het bestand op.</li>
+</ul>
+<p>Hoe halen we de key op in onze code?
+Hiervoor gebruiken we de os module.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> os
+<span class="hljs-comment"># haal de apikey uit het .env bestand</span>
+apikey = os.environ[<span class="hljs-string">&quot;APIKEY&quot;</span>]
+<span class="hljs-comment"># we printen de key om te checken om het is gelukt</span>
+print(apikey)
+</code></pre>
+<p>Nu kunnen we aan de slag gaan!</p>
+<h2 id="lets-do-this">Let&apos;s Do This!</h2>
+<p>Laten we allereerst de benodigde modulen importeren:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> urllib.request
+<span class="hljs-keyword">import</span> json
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> time
+</code></pre>
+<p>Nu halen we de ApiKey uit de <code>.env</code> file en plakken het vast aan de url (endpoint).</p>
+<pre><code class="lang-python">
+apikey = os.environ[<span class="hljs-string">&quot;APIKEY&quot;</span>]
+
+url = <span class="hljs-string">&quot;https://api.openweathermap.org/data/2.5/weather?&quot;</span>
+<span class="hljs-comment"># Voeg de api key toe aan de URL (endpoint)</span>
+url += <span class="hljs-string">&quot;APPID=&quot;</span> + apikey
+<span class="hljs-comment"># nu voegen we wat extra opties toe</span>
+url += <span class="hljs-string">&quot;&amp;units=metric&amp;&amp;q=Amsterdam&quot;</span>
+</code></pre>
+<p>En nu kunnen we via de samengestelde url de data gaan opvragen.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># haal de data op met een request</span>
+req = urllib.request.Request(url)
+resp = urllib.request.urlopen(req).read().decode()
+
+<span class="hljs-comment"># lees de JSON data in de variabele data</span>
+data = json.loads(resp)
+print(data)
+</code></pre>
+<p>Als het goed is zul je nu data uitgeprint krijgen. Het lijkt een beetje op het onderstaande:</p>
+<pre><code class="lang-JSON">{<span class="hljs-string">&apos;coord&apos;</span>: {<span class="hljs-string">&apos;lon&apos;</span>: <span class="hljs-number">4.89</span>, <span class="hljs-string">&apos;lat&apos;</span>: <span class="hljs-number">52.37</span>}, <span class="hljs-string">&apos;weather&apos;</span>: [{<span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-number">800</span>, <span class="hljs-string">&apos;main&apos;</span>: <span class="hljs-string">&apos;Clear&apos;</span>, <span class="hljs-string">&apos;description&apos;</span>: <span class="hljs-string">&apos;clear sky&apos;</span>, <span class="hljs-string">&apos;icon&apos;</span>: <span class="hljs-string">&apos;01n&apos;</span>}], <span class="hljs-string">&apos;base&apos;</span>: <span class="hljs-string">&apos;stations&apos;</span>, <span class="hljs-string">&apos;main&apos;</span>: {<span class="hljs-string">&apos;temp&apos;</span>: <span class="hljs-number">9.36</span>, <span class="hljs-string">&apos;feels_like&apos;</span>: <span class="hljs-number">4.39</span>, <span class="hljs-string">&apos;temp_min&apos;</span>: <span class="hljs-number">8.89</span>, <span class="hljs-string">&apos;temp_max&apos;</span>: <span class="hljs-number">10</span>, <span class="hljs-string">&apos;pressure&apos;</span>: <span class="hljs-number">1011</span>, <span class="hljs-string">&apos;humidity&apos;</span>: <span class="hljs-number">87</span>}, <span class="hljs-string">&apos;visibility&apos;</span>: <span class="hljs-number">10000</span>, <span class="hljs-string">&apos;wind&apos;</span>: {<span class="hljs-string">&apos;speed&apos;</span>: <span class="hljs-number">6.2</span>, <span class="hljs-string">&apos;deg&apos;</span>: <span class="hljs-number">150</span>}, <span class="hljs-string">&apos;clouds&apos;</span>: {<span class="hljs-string">&apos;all&apos;</span>: <span class="hljs-number">0</span>}, <span class="hljs-string">&apos;dt&apos;</span>: <span class="hljs-number">1608152920</span>, <span class="hljs-string">&apos;sys&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-number">1524</span>, <span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;NL&apos;</span>, <span class="hljs-string">&apos;sunrise&apos;</span>: <span class="hljs-number">1608104718</span>, <span class="hljs-string">&apos;sunset&apos;</span>: <span class="hljs-number">1608132436</span>}, <span class="hljs-string">&apos;timezone&apos;</span>: <span class="hljs-number">3600</span>, <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-number">2759794</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Amsterdam&apos;</span>, <span class="hljs-string">&apos;cod&apos;</span>: <span class="hljs-number">200</span>}
+</code></pre>
+<p>Dit is het welbekende JSON-formaat. In paragraaf 2.1 zullen we je uitleggen hoe het werkt en waar het goed voor is.</p>
+<p>Voor de volledigheid, hier nog de hele code in de onderstaande repl. Vergeet niet je eigen ApiKey in het .env bestand te zetten als je de code wilt testen:</p>
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@MCPython/OpenWeatherVoorbeeld?lite=true"></iframe>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Les 1: De Wikipedia API.html" class="navigation navigation-prev " aria-label="Previous page: De Wikipedia API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Les 2.1 JSON.html" class="navigation navigation-next " aria-label="Next page: JSON">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"De Weather API","level":"1.4","depth":1,"next":{"title":"JSON","level":"1.4.1","depth":2,"path":"Les 2.1 JSON.md","ref":"Les 2.1 JSON.md","articles":[]},"previous":{"title":"De Wikipedia API","level":"1.3","depth":1,"path":"Les 1: De Wikipedia API.md","ref":"Les 1: De Wikipedia API.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Les 2: De Weather API.md","mtime":"2020-12-16T21:30:55.849Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:15:35.107Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

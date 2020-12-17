@@ -1,0 +1,374 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Eindopdracht · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Les 2.3 Terug naar de OpenWeather data.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introductie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Les 0: Stukje theorie.html">
+            
+                <a href="Les 0: Stukje theorie.html">
+            
+                    
+                    Wat is een API?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Les 1: De Wikipedia API.html">
+            
+                <a href="Les 1: De Wikipedia API.html">
+            
+                    
+                    De Wikipedia API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Les 2: De Weather API.html">
+            
+                <a href="Les 2: De Weather API.html">
+            
+                    
+                    De Weather API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Les 2.1 JSON.html">
+            
+                <a href="Les 2.1 JSON.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Les 2.2 Python en JSON.html">
+            
+                <a href="Les 2.2 Python en JSON.html">
+            
+                    
+                    Python en JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                <a href="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                    
+                    OpenWeatherMap JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="Eindopdracht.html">
+            
+                <a href="Eindopdracht.html">
+            
+                    
+                    Eindopdracht
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Eindopdracht</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="de-wikipedia-api">De wikipedia API</h1>
+<h2 id="apikey">ApiKey?</h2>
+<p>De meeste API&apos;s vereisen een ApiKey. Een sleutel die je nodig hebt om gebruik te mogen maken van de API service. Maar sommige niet. Zoals de Wikipedia API.</p>
+<h2 id="wikipedia">Wikipedia</h2>
+<p>Zoals gezegd hoef je geen ApiKey te hebben om met de API van Wikipedia &apos;praten&apos;.
+Een andere reden is dat Wikipedia een interessante, grote database aan informatie heeft waar we dankbaar gebruik van kunnen maken.</p>
+<h2 id="modules">Modules</h2>
+<ul>
+<li>Als je wilt werken met turtle, dan moet je turtle importeren.</li>
+<li>Als je wilt werken met random, dan moet je random importeren.</li>
+</ul>
+<p>Als je tegen een API wilt praten, dan heb je een module nodig die je moet importeren aan het begin van je code: <code>requests</code></p>
+<p>De module requests hebben we nodig om de Web-API aan te roepen. En de data te verkrijgen.</p>
+<p>Om hem te importeren, doen we dit:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> requests
+</code></pre>
+<p>(Als je Python op je lokale machine draait, dan moet je deze library eerst installeren. Doe dat door <code>pip3 install requests</code> in te typen in je terminal)</p>
+<h2 id="url">URL</h2>
+<p>We moeten dus de data via de API gaan ophalen.</p>
+<p>Laten we beginnen met een voorbeeld waarbij je als gebruiker invoert wat je wilt zoeken. Op basis daarvan wordt een url samengesteld.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># Vraag de gebruiker om een zoekterm</span>
+search = input(<span class="hljs-string">&quot;Geef een zoekterm: &quot;</span>)
+<span class="hljs-comment"># We plakken deze zoekterm aan de API-url</span>
+url = <span class="hljs-string">&quot;https://en.wikipedia.org/w/api.php?action=opensearch&amp;limit=1&amp;format=json&amp;search=&quot;</span> + search
+</code></pre>
+<p>We vragen dus eerst om een zoekwoord.
+Vervolgens plakken we dat aan een URL. Maar laten we dit URL wat nader bekijken:</p>
+<p>De basis van het bovenstaande URL is: <a href="https://en.wikipedia.org/w/api.php" target="_blank">https://en.wikipedia.org/w/api.php</a>
+Deze basis noemen we een <em>endpoint</em>. Een endpoint is de plek waar je API calls kunt doen. Het is een communicatiekanaal. Via dit kanaal vraag je iets op (request) en via dit kanaal krijg je antwoord (response). Vervolgens kun je met parameters allerlei waarden en instellingen meegegeven. Die parameters staan achter het vraagteken en elke parameter wordt onderscheiden door een &amp;. Hierboven heb je dus 4 parameters:</p>
+<ul>
+<li>action = opensearch: we doen een vrije zoekopdracht</li>
+<li>limit = 1: we geven aan dat we maximaal 1 resultaat willen</li>
+<li>format = JSON: het formaat van het antwoord willen we json</li>
+<li>search = <wat je="" invult="">: ten slotte willen we dat hij zoekt op jouw zoekterm</wat></li>
+</ul>
+<p>Deze hele URL (<a href="https://en.wikipedia.org/w/api.php?action=opensearch&amp;limit=1&amp;format=json&amp;search=iets" target="_blank">https://en.wikipedia.org/w/api.php?action=opensearch&amp;limit=1&amp;format=json&amp;search=iets</a>) noem je dus ook een query: Je vraagt de API of hij antwoord wil geven op jouw vraag.</p>
+<h2 id="request-data">Request Data</h2>
+<p>We kunnen nu de URL gebruiken om de data van de API op te vragen. Dit doen we met:</p>
+<pre><code class="lang-python">response = requests.get(url)
+</code></pre>
+<h2 id="reading-json">Reading JSON</h2>
+<p>JSON is het formaat dat gebruikt wordt om gegevens heen-en-weer te versturen. JSON staat voor <em>JavaScript Object Notation</em>. Zoals de naam ook al doet vermoeden is dit formaat vooral gebaseerd op JavaScript objecten. Maar ook in andere programmeertalen kunnen we gewoon werken met JSON. Zoals in het plaatje hieronder ook te zien is geeft de server het resultaat van je zoekopdracht terug in het JSON formaat.</p>
+<p><img src="client server.png" alt="JSON als communicatietaal client server"></p>
+<p>In Python worden deze JSON structuren omgezet naar lijsten en dictionaries.</p>
+<pre><code class="lang-python"><span class="hljs-comment"># The we can load the json received from the response</span>
+data = response.json()
+<span class="hljs-comment"># Print the data to view it</span>
+print(data)
+</code></pre>
+<p>Dit was je eerste kennismaking met een API. Maak nu opdracht 1 in repl.it. Zie:</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Les 2.3 Terug naar de OpenWeather data.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: OpenWeatherMap JSON">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Eindopdracht","level":"1.5","depth":1,"previous":{"title":"OpenWeatherMap JSON","level":"1.4.3","depth":2,"path":"Les 2.3 Terug naar de OpenWeather data.md","ref":"Les 2.3 Terug naar de OpenWeather data.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Eindopdracht.md","mtime":"2020-12-17T12:25:52.631Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:15:35.107Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

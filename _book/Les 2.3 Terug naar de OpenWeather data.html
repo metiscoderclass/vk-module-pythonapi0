@@ -1,0 +1,414 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>OpenWeatherMap JSON · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Eindopdracht.html" />
+    
+    
+    <link rel="prev" href="Les 2.2 Python en JSON.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introductie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Les 0: Stukje theorie.html">
+            
+                <a href="Les 0: Stukje theorie.html">
+            
+                    
+                    Wat is een API?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Les 1: De Wikipedia API.html">
+            
+                <a href="Les 1: De Wikipedia API.html">
+            
+                    
+                    De Wikipedia API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Les 2: De Weather API.html">
+            
+                <a href="Les 2: De Weather API.html">
+            
+                    
+                    De Weather API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Les 2.1 JSON.html">
+            
+                <a href="Les 2.1 JSON.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Les 2.2 Python en JSON.html">
+            
+                <a href="Les 2.2 Python en JSON.html">
+            
+                    
+                    Python en JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                <a href="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                    
+                    OpenWeatherMap JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Eindopdracht.html">
+            
+                <a href="Eindopdracht.html">
+            
+                    
+                    Eindopdracht
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >OpenWeatherMap JSON</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="openweather-data">OpenWeather data</h1>
+<p>De OpenWeather data gaf ons de volgende JSON terug:</p>
+<pre><code>{&apos;coord&apos;: {&apos;lon&apos;: 4.89, &apos;lat&apos;: 52.37}, &apos;weather&apos;: [{&apos;id&apos;: 800, &apos;main&apos;: &apos;Clear&apos;, &apos;description&apos;: &apos;clear sky&apos;, &apos;icon&apos;: &apos;01n&apos;}], &apos;base&apos;: &apos;stations&apos;, &apos;main&apos;: {&apos;temp&apos;: 9.36, &apos;feels_like&apos;: 4.39, &apos;temp_min&apos;: 8.89, &apos;temp_max&apos;: 10, &apos;pressure&apos;: 1011, &apos;humidity&apos;: 87}, &apos;visibility&apos;: 10000, &apos;wind&apos;: {&apos;speed&apos;: 6.2, &apos;deg&apos;: 150}, &apos;clouds&apos;: {&apos;all&apos;: 0}, &apos;dt&apos;: 1608152920, &apos;sys&apos;: {&apos;type&apos;: 1, &apos;id&apos;: 1524, &apos;country&apos;: &apos;NL&apos;, &apos;sunrise&apos;: 1608104718, &apos;sunset&apos;: 1608132436}, &apos;timezone&apos;: 3600, &apos;id&apos;: 2759794, &apos;name&apos;: &apos;Amsterdam&apos;, &apos;cod&apos;: 200}
+</code></pre><p>Zo&apos;n lange string op &#xE9;&#xE9;n regel is natuurlijk niet handig. Je zou met een JSON viewer op het internet het formaat wat leesbaarder kunnen maken. Voor een handige JSON viewer, zie <a href="http://jsonviewer.stack.hu/" target="_blank">http://jsonviewer.stack.hu/</a></p>
+<p><strong>Gebruik:</strong>
+Plak de JSON string erin en druk op format. Ik krijg dan het volgende te zien:</p>
+<pre><code>{
+  &apos;coord&apos;: {
+    &apos;lon&apos;: 4.89,
+    &apos;lat&apos;: 52.37
+  },
+  &apos;weather&apos;: [
+    {
+      &apos;id&apos;: 800,
+      &apos;main&apos;: &apos;Clear&apos;,
+      &apos;description&apos;: &apos;clear sky&apos;,
+      &apos;icon&apos;: &apos;01n&apos;
+    }
+  ],
+  &apos;base&apos;: &apos;stations&apos;,
+  &apos;main&apos;: {
+    &apos;temp&apos;: 9.36,
+    &apos;feels_like&apos;: 4.39,
+    &apos;temp_min&apos;: 8.89,
+    &apos;temp_max&apos;: 10,
+    &apos;pressure&apos;: 1011,
+    &apos;humidity&apos;: 87
+  },
+  &apos;visibility&apos;: 10000,
+  &apos;wind&apos;: {
+    &apos;speed&apos;: 6.2,
+    &apos;deg&apos;: 150
+  },
+  &apos;clouds&apos;: {
+    &apos;all&apos;: 0
+  },
+  &apos;dt&apos;: 1608152920,
+  &apos;sys&apos;: {
+    &apos;type&apos;: 1,
+    &apos;id&apos;: 1524,
+    &apos;country&apos;: &apos;NL&apos;,
+    &apos;sunrise&apos;: 1608104718,
+    &apos;sunset&apos;: 1608132436
+  },
+  &apos;timezone&apos;: 3600,
+  &apos;id&apos;: 2759794,
+  &apos;name&apos;: &apos;Amsterdam&apos;,
+  &apos;cod&apos;: 200
+}
+</code></pre><p>Willen we nu de windsnelheid printen, dan doen we dat zo:</p>
+<pre><code class="lang-python">print(data[<span class="hljs-string">&quot;wind&quot;</span>][<span class="hljs-string">&quot;speed&quot;</span>])
+</code></pre>
+<h2 id="terug-naar-ons-voorbeeld">Terug naar ons voorbeeld:</h2>
+<p>Uiteindelijk gaan we nu een script schrijven waarmee we de volgende gegevens gaan opvragen:</p>
+<ul>
+<li>huidige temperatuur</li>
+<li>de minimum temperatuur</li>
+<li>de maximum temperatuur</li>
+<li>en de luchtvochtigheid</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+  req = urllib.request.Request(url)
+  resp = urllib.request.urlopen(req).read().decode()
+
+  data = json.loads(resp)
+
+  temp = data[<span class="hljs-string">&quot;main&quot;</span>][<span class="hljs-string">&quot;temp&quot;</span>]
+  tempmin = data[<span class="hljs-string">&quot;main&quot;</span>][<span class="hljs-string">&quot;temp_min&quot;</span>]
+  tempmax = data[<span class="hljs-string">&quot;main&quot;</span>][<span class="hljs-string">&quot;temp_max&quot;</span>]
+  humidity = data[<span class="hljs-string">&quot;main&quot;</span>][<span class="hljs-string">&quot;humidity&quot;</span>]
+  name = data[<span class="hljs-string">&quot;name&quot;</span>]
+
+  <span class="hljs-comment"># print de data uit</span>
+  print(<span class="hljs-string">&quot;Het is momenteel &quot;</span> + temp + <span class="hljs-string">&quot; graden in &quot;</span> + name)
+  print(<span class="hljs-string">&quot;Minimum temperatuur is: &quot;</span> + tempmin)
+  print(<span class="hljs-string">&quot;Maximum temperatuur is: &quot;</span> + tempmax)
+  print(<span class="hljs-string">&quot;Luchtvochtigheid is: &quot;</span> +  humidity + <span class="hljs-string">&quot;.&quot;</span>)
+
+  <span class="hljs-comment"># wacht maar een minuut voordat je weer</span>
+  <span class="hljs-comment"># een request doet</span>
+  time.sleep(<span class="hljs-number">60</span>)
+</code></pre>
+<p>We hebben nu een leuk weerstationnetje gemaakt.
+Maak nu de volgende opdrachten:</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Les 2.2 Python en JSON.html" class="navigation navigation-prev " aria-label="Previous page: Python en JSON">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Eindopdracht.html" class="navigation navigation-next " aria-label="Next page: Eindopdracht">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"OpenWeatherMap JSON","level":"1.4.3","depth":2,"next":{"title":"Eindopdracht","level":"1.5","depth":1,"path":"Eindopdracht.md","ref":"Eindopdracht.md","articles":[]},"previous":{"title":"Python en JSON","level":"1.4.2","depth":2,"path":"Les 2.2 Python en JSON.md","ref":"Les 2.2 Python en JSON.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Les 2.3 Terug naar de OpenWeather data.md","mtime":"2020-12-17T12:20:05.657Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:15:35.107Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

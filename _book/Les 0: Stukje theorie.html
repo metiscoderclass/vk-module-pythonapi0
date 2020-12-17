@@ -1,0 +1,346 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Wat is een API? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Les 1: De Wikipedia API.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introductie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="Les 0: Stukje theorie.html">
+            
+                <a href="Les 0: Stukje theorie.html">
+            
+                    
+                    Wat is een API?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Les 1: De Wikipedia API.html">
+            
+                <a href="Les 1: De Wikipedia API.html">
+            
+                    
+                    De Wikipedia API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Les 2: De Weather API.html">
+            
+                <a href="Les 2: De Weather API.html">
+            
+                    
+                    De Weather API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Les 2.1 JSON.html">
+            
+                <a href="Les 2.1 JSON.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Les 2.2 Python en JSON.html">
+            
+                <a href="Les 2.2 Python en JSON.html">
+            
+                    
+                    Python en JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                <a href="Les 2.3 Terug naar de OpenWeather data.html">
+            
+                    
+                    OpenWeatherMap JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Eindopdracht.html">
+            
+                <a href="Eindopdracht.html">
+            
+                    
+                    Eindopdracht
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Wat is een API?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introductie-module">Introductie module</h1>
+<h2 id="apis">API&apos;s</h2>
+<p>Als programmeur kom je vaak de afkorting API tegen. Waar wat is een API? API is een afkorting voor <em>Application Programming Interface</em>. Zie het maar als een verzameling functies die een ontwikkelaar heeft gemaakt zodat andere ontwikkelaars daar gebruik van kan maken. Is het nog een beetje te <em>vaag</em>? Geen zorgen, we gaan er iets dieper op in ..</p>
+<h2 id="wat-is-een-interface">Wat is een interface?</h2>
+<p>De I van API staat voor interface. Interfaces kom je vaak tegen. Denk bijvoorbeeld aan een horloge. De interface van een horloge bestaat uit:</p>
+<ul>
+<li>de wijzerplaat en</li>
+<li>de draaikopjes</li>
+</ul>
+<p>Met de knopjes kun je de horloge instellen op een makkelijke manier. Je hoeft de interne werking van de horloge niet te kennen om je horloge te gebruiken.</p>
+<p>Een ander voorbeeld: de afstandsbediening van je televisie. Ook hier heb je knopjes die het mogelijk maken om een televisie te bedienen zonder dat je kennis hoeft te hebben van de interne werking van een televisie.</p>
+<p>Een (software) API is ook zoiets. Het is een verzameling functies die een programmeur heeft gemaakt zodat andere programmeurs daar makkelijk gebruik van kunnen maken. Denk maar aan de <em>turtle</em> library die jullie met Python-0 hebben gebruikt. Iemand heeft dat ooit gemaakt zodat jullie eenvoudig tekeningen op het scherm kunnen maken. Je kunt mooie tekeningen met eenvoudige commando&apos;s maken, zonder dat je de interne werking van de turtle library hoeft te kennen. Dit dankzij de turtle interface die functies zoals <code>forward()</code>, <code>right()</code>, <code>goto()</code> etc bevat.</p>
+<h2 id="web-apis">Web API&apos;s</h2>
+<p>Hopelijk heb je nu een goed beeld van wat een API is. De afgelopen jaren is een bepaalde type API heel erg populair geworden: de Web API. Dit is een API die vanuit het <em>Web</em> gebruikt kan worden. Zo kan iemand een API hebben gemaakt die hij ergens op een server op het internet heeft gezet. Weer een ander kan daar gebruik van maken in zijn eigen programma. Vaak zijn dit ook publieke, open API&apos;s en dat betekent dat iedereen van deze functies gebruik kan maken.</p>
+<p>Steeds meer bedrijven en websites ontwikkelen publieke open API&apos;s. Hiermee kan iedere ontwikkelaar aan de slag om bijvoorbeeld Twitter-berichten op een bepaalde locatie in een Google Maps te laten zien. Dit kan hij/zijn doen door gebruik te maken van de open API-toegang die Twitter <em>en</em> Google aanbieden.</p>
+<p>Niet alleen softwarebedrijven stellen een open API beschikbaar, ook kranten, musea en bijvoorbeeld gemeentes doen dat. Hierdoor kunnen ontwikkelaars aan de slag met de berichten, foto&apos;s en video&apos;s van hun website zonder dat ze deze handmatig van de site hoeven te halen.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introductie">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Les 1: De Wikipedia API.html" class="navigation navigation-next " aria-label="Next page: De Wikipedia API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Wat is een API?","level":"1.2","depth":1,"next":{"title":"De Wikipedia API","level":"1.3","depth":1,"path":"Les 1: De Wikipedia API.md","ref":"Les 1: De Wikipedia API.md","articles":[]},"previous":{"title":"Introductie","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Les 0: Stukje theorie.md","mtime":"2020-09-02T11:09:52.443Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-12T17:15:35.107Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
