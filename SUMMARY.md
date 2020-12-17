@@ -1,10 +1,11 @@
-# Inhoudsopgave
+# Table of contents
 
 * [Introductie](README.md)
-* [Wat is een API?](Les 0: Stukje theorie.md)
-* [De Wikipedia API](Les 1: De Wikipedia API.md)
-* [De Weather API](Les 2: De Weather API.md)
-  * [JSON](Les 2.1 JSON.md)
-  * [Python en JSON](Les 2.2 Python en JSON.md)
-  * [OpenWeatherMap JSON](Les 2.3 Terug naar de OpenWeather data.md)
-* [Eindopdracht](Eindopdracht.md)
+* [Wat is een API?](les-0-stukje-theorie.md)
+* [De Wikipedia API](les-1-de-wikipedia-api.md)
+* [De Weather API](les-2-de-weather-api/README.md)
+  * [JSON](les-2-de-weather-api/les-2.1-json.md)
+  * [Python en JSON](les-2-de-weather-api/les-2.2-python-en-json.md)
+  * [OpenWeatherMap JSON](les-2-de-weather-api/les-2.3-terug-naar-de-openweather-data.md)
+* [Eindopdracht](eindopdracht.md)
+
