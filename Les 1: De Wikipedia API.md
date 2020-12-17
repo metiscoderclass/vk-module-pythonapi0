@@ -1,11 +1,7 @@
 # De wikipedia API
 
-## ApiKey?
-De meeste API's vereisen een ApiKey. Een sleutel die je nodig hebt om gebruik te mogen maken van de API service. Maar sommige niet. Zoals de Wikipedia API.
-
 ## Wikipedia
-Zoals gezegd hoef je geen ApiKey te hebben om met de API van Wikipedia 'praten'.
-Een andere reden is dat Wikipedia een interessante, grote database aan informatie heeft waar we dankbaar gebruik van kunnen maken.
+We beginnen met de Wikipedia API. Dit is een interessante API, want Wikipedia heeft een interessante, grote database aan informatie waar we dankbaar gebruik van kunnen maken.
 
 ## Modules
 * Als je wilt werken met turtle, dan moet je turtle importeren.
@@ -21,7 +17,7 @@ Om hem te importeren, doen we dit:
 import requests
 ```
 
-(Als je Python op je lokale machine draait, dan moet je deze library eerst installeren. Doe dat door ```pip3 install requests``` in te typen in je terminal)
+(Als je Python op je lokale machine draait, dan moet je deze library eerst installeren. Doe dat door ```pip3 install requests``` in te typen in je terminal). In repl.it hoeft dit niet, want het gebeurt automatisch.
 
 ## URL
 We moeten dus de data via de API gaan ophalen.
@@ -59,7 +55,7 @@ JSON is het formaat dat gebruikt wordt om gegevens heen-en-weer te versturen. JS
 
 ![JSON als communicatietaal client server](client server.png)
 
-In Python worden deze JSON structuren omgezet naar lijsten en dictionaries.
+In Python worden deze JSON structuren omgezet naar lijsten en dictionaries. 
 
 ```python
 # The we can load the json received from the response
