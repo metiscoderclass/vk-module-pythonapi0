@@ -59,11 +59,13 @@ Willen we nu de straatnaam printen, dan doen we dat zo:
 print("Straatnaam: " + object_person["address"]["street"])
 ```
 
-Je hebt dus een dictionary \_in\_ een dictionary. 
+Je hebt dus een dictionary _in_ een dictionary. 
 
 En nu een JSON object met een array erin. Arrays worden omgezet naar Python lijsten. Kijk goed naar het onderstaande voorbeeld:
 
 {% embed url="https://repl.it/@hakkas/JSON-voorbeeld-3?lite=true" %}
 
+## Opdrachten
 
+komt nog
 

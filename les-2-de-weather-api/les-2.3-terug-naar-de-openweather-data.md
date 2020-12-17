@@ -95,5 +95,9 @@ while True:
   time.sleep(60)
 ```
 
-We hebben nu een leuk weerstationnetje gemaakt. Maak nu de volgende opdrachten:
+We hebben nu een leuk weerstationnetje gemaakt. Maak nu de volgende opdrachten.
+
+## Opdrachten
+
+komt nog
 
