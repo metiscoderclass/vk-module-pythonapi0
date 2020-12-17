@@ -38,10 +38,10 @@ We vragen dus eerst om een zoekwoord. Vervolgens plakken we dat aan een URL. Maa
 
 De basis van het bovenstaande URL is: [https://en.wikipedia.org/w/api.php](https://en.wikipedia.org/w/api.php) Deze basis noemen we een _endpoint_. Een endpoint is de plek waar je API calls kunt doen. Het is een communicatiekanaal. Via dit kanaal vraag je iets op \(request\) en via dit kanaal krijg je antwoord \(response\). Vervolgens kun je met parameters allerlei waarden en instellingen meegegeven. Die parameters staan achter het vraagteken en elke parameter wordt onderscheiden door een &. Hierboven heb je dus 4 parameters:
 
-* action = opensearch: we doen een vrije zoekopdracht
-* limit = 1: we geven aan dat we maximaal 1 resultaat willen
-* format = JSON: het formaat van het antwoord willen we json
-* search = : ten slotte willen we dat hij zoekt op jouw zoekterm
+* `action = opensearch`: we doen een vrije zoekopdracht
+* `limit = 1`: we geven aan dat we maximaal 1 resultaat willen
+* `format = JSON`: het formaat van het antwoord willen we json
+* `search =` : ten slotte willen we dat hij zoekt op jouw zoekterm
 
 Deze hele URL \([https://en.wikipedia.org/w/api.php?action=opensearch&limit=1&format=json&search=iets](https://en.wikipedia.org/w/api.php?action=opensearch&limit=1&format=json&search=iets)\) noem je dus ook een query: Je vraagt de API of hij antwoord wil geven op jouw vraag.
 
@@ -59,7 +59,7 @@ JSON is het formaat dat gebruikt wordt om gegevens heen-en-weer te versturen. JS
 
 ![JSON als communicatietaal client server](.gitbook/assets/client%20server%20%283%29.png)
 
-In Python worden deze JSON structuren omgezet naar lijsten en dictionaries.
+In Python worden deze JSON structuren omgezet naar lijsten en dictionaries. Hierover meer in de komende hoofdstukken.
 
 ```python
 # The we can load the json received from the response

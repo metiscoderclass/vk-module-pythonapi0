@@ -2,7 +2,7 @@
 
 ## API's
 
-Als programmeur kom je vaak de afkorting API tegen. Waar wat is een API? API is een afkorting voor _Application Programming Interface_. Zie het maar als een verzameling functies die een ontwikkelaar heeft gemaakt zodat andere ontwikkelaars daar gebruik van kan maken. Is het nog een beetje te _vaag_? Geen zorgen, we gaan er iets dieper op in ..
+Als programmeur kom je vaak de afkorting API tegen. Waar wat is een API? API is een afkorting voor _**A**pplication **P**rogramming **I**nterface_. Zie het maar als een verzameling functies die een ontwikkelaar heeft gemaakt zodat andere ontwikkelaars daar gebruik van kan maken. Is het nog een beetje te _vaag_? Geen zorgen, we gaan er iets dieper op in ..
 
 ## Wat is een interface?
 
