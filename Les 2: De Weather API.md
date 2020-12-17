@@ -80,4 +80,4 @@ Dit is het welbekende JSON-formaat. In paragraaf 2.1 zullen we je uitleggen hoe 
 
 Voor de volledigheid, hier nog de hele code in de onderstaande repl. Vergeet niet je eigen ApiKey in het .env bestand te zetten als je de code wilt testen:
 
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@MCPython/OpenWeatherVoorbeeld?lite=true"></iframe>
+https://repl.it/@MCPython/OpenWeatherVoorbeeld?lite=true

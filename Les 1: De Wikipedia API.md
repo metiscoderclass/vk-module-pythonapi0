@@ -1,7 +1,7 @@
 # De wikipedia API
 
 ## Wikipedia
-We beginnen met de Wikipedia API. Dit is een interessante API, want Wikipedia heeft een interessante, grote database aan informatie waar we dankbaar gebruik van kunnen maken.
+We beginnen met de Wikipedia API. Dit is een leuke API, want Wikipedia heeft een interessante, grote database aan informatie waar we dankbaar gebruik van kunnen maken.
 
 ## Modules
 * Als je wilt werken met turtle, dan moet je turtle importeren.
@@ -55,7 +55,7 @@ JSON is het formaat dat gebruikt wordt om gegevens heen-en-weer te versturen. JS
 
 ![JSON als communicatietaal client server](client server.png)
 
-In Python worden deze JSON structuren omgezet naar lijsten en dictionaries. 
+In Python worden deze JSON structuren omgezet naar lijsten en dictionaries.
 
 ```python
 # The we can load the json received from the response
