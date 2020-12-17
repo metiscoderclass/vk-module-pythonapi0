@@ -34,5 +34,36 @@ De variabele object\_person is nu een dictionary. Hij bevat 4 keys, te weten:
 
 Met de module Python-3 heb je geleerd hoe je dictionaries kan gebruiken. We printen de voornaam en achternaam uit:
 
-Laten we nu een iets complexer JSON string nemen. Eentje met een ander object als value. Schematisch ziet dat er zo uit: ![](https://docs.google.com/drawings/d/e/2PACX-1vTP2wfgPzvzD798-G8AFsnpHi-K7qVQhv62Gy4ocyzzJHylOFe7vJYrH7DfpSH_FtKybp0TmPm-TSlV/pub?w=679&h=382) \`\`\`json { "first\_name" : "Henk", "last\_name" : "Shark", "online" : true, "age" : 20, "address" : { "street" : "Mauritskade", "number" : 58 } } \`\`\` Willen we nu de straatnaam printen, dan doen we dat zo: \`\`\`Python print\("Straatnaam: " + object\_person\["address"\]\["street"\]\) \`\`\` Je hebt dus een dictionary \_in\_ een dictionary. En nu een JSON object met een array erin. Arrays worden omgezet naar Python lijsten. Kijk goed naar het onderstaande voorbeeld:
+Laten we nu een iets complexer JSON string nemen. Eentje met een ander object als value. Schematisch ziet dat er zo uit:
+
+![](https://docs.google.com/drawings/d/e/2PACX-1vTP2wfgPzvzD798-G8AFsnpHi-K7qVQhv62Gy4ocyzzJHylOFe7vJYrH7DfpSH_FtKybp0TmPm-TSlV/pub?w=679&h=382)
+
+
+
+```javascript
+{ 
+    "first_name" : "Henk", 
+    "last_name" : "Shark", 
+    "online" : true, 
+    "age" : 20, 
+    "address" : { 
+        "street" : "Mauritskade", 
+        "number" : 58 
+    } 
+} 
+```
+
+Willen we nu de straatnaam printen, dan doen we dat zo:
+
+```javascript
+print("Straatnaam: " + object_person["address"]["street"])
+```
+
+Je hebt dus een dictionary \_in\_ een dictionary. 
+
+En nu een JSON object met een array erin. Arrays worden omgezet naar Python lijsten. Kijk goed naar het onderstaande voorbeeld:
+
+{% embed url="https://repl.it/@hakkas/JSON-voorbeeld-3?lite=true" %}
+
+
 
