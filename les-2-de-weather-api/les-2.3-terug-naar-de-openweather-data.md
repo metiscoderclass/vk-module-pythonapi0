@@ -10,7 +10,7 @@ Zo'n lange string op één regel is natuurlijk niet handig. Je zou met een JSON 
 
 **Gebruik:** Plak de JSON string erin en druk op format. Ik krijg dan het volgende te zien:
 
-```text
+```javascript
 {
   'coord': {
     'lon': 4.89,
