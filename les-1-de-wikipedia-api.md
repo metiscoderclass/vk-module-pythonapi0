@@ -2,7 +2,7 @@
 
 ## Wikipedia
 
-We beginnen met de Wikipedia API. Dit is een leuke API, want Wikipedia heeft een interessante, grote database aan informatie waar we dankbaar gebruik van kunnen maken.
+Genoeg theorie voor nu. Laten we wat praktischer aan de slag gaan met een interessante Web API. We beginnen met de Wikipedia API. Dit is een leuke API, want Wikipedia heeft een interessante, grote database aan informatie waar we dankbaar gebruik van kunnen maken.
 
 ## Modules
 
@@ -11,7 +11,7 @@ We beginnen met de Wikipedia API. Dit is een leuke API, want Wikipedia heeft een
 
 Als je tegen een API wilt praten, dan heb je een module nodig die je moet importeren aan het begin van je code: `requests`
 
-De module requests hebben we nodig om de Web-API aan te roepen. En de data te verkrijgen.
+De module **requests** hebben we nodig om de Web-API aan te roepen. En de data te verkrijgen.
 
 Om hem te importeren, doen we dit:
 
@@ -25,7 +25,7 @@ import requests
 
 We moeten dus de data via de API gaan ophalen.
 
-Laten we beginnen met een voorbeeld waarbij je als gebruiker invoert wat je wilt zoeken. Op basis daarvan wordt een url samengesteld.
+Laten we beginnen met een voorbeeld waarbij je als gebruiker invoert wat je wilt zoeken. Op basis daarvan wordt een **URL** samengesteld.
 
 ```python
 # Vraag de gebruiker om een zoekterm
@@ -43,7 +43,7 @@ De basis van het bovenstaande URL is: [https://en.wikipedia.org/w/api.php](https
 * `format = JSON`: het formaat van het antwoord willen we json
 * `search =` : ten slotte willen we dat hij zoekt op jouw zoekterm
 
-Deze hele URL \([https://en.wikipedia.org/w/api.php?action=opensearch&limit=1&format=json&search=iets](https://en.wikipedia.org/w/api.php?action=opensearch&limit=1&format=json&search=iets)\) noem je dus ook een query: Je vraagt de API of hij antwoord wil geven op jouw vraag.
+Deze hele URL \([https://en.wikipedia.org/w/api.php?action=opensearch&limit=1&format=json&search=iets](https://en.wikipedia.org/w/api.php?action=opensearch&limit=1&format=json&search=iets)\) noem je dus ook een query: Je vraagt de API of hij antwoord wil geven op jouw query\(=vraag\).
 
 ## Request Data
 
@@ -53,13 +53,13 @@ We kunnen nu de URL gebruiken om de data van de API op te vragen. Dit doen we me
 response = requests.get(url)
 ```
 
-## Reading JSON
+## Het inlezen van JSON data
 
-JSON is het formaat dat gebruikt wordt om gegevens heen-en-weer te versturen. JSON staat voor _JavaScript Object Notation_. Zoals de naam ook al doet vermoeden is dit formaat vooral gebaseerd op JavaScript objecten. Maar ook in andere programmeertalen kunnen we gewoon werken met JSON. Zoals in het plaatje hieronder ook te zien is geeft de server het resultaat van je zoekopdracht terug in het JSON formaat.
+JSON is het formaat dat gebruikt wordt om gegevens heen-en-weer te versturen. JSON staat voor _JavaScript Object Notation_. Zoals de naam ook al zegt is dit formaat vooral gebaseerd op JavaScript objecten. Maar ook in andere programmeertalen kunnen we gewoon werken met JSON. Zoals in het plaatje hieronder ook te zien is geeft de server het resultaat van je zoekopdracht terug in het JSON formaat.
 
 ![JSON als communicatietaal client server](.gitbook/assets/client%20server%20%283%29.png)
 
-In Python worden deze JSON structuren omgezet naar lijsten en dictionaries. Hierover meer in de komende hoofdstukken.
+In Python worden deze JSON structuren omgezet naar lijsten en dictionaries. Hierover meer in de komende hoofdstukken. Voeg voor nu de onderstaande twee regels toe aan je code en kijk of het werkt. Als het goed is krijg je het weer in JSON formaat te zien.
 
 ```python
 # The we can load the json received from the response
