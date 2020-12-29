@@ -99,5 +99,11 @@ We hebben nu een leuk weerstationnetje gemaakt. Maak nu de volgende opdrachten.
 
 ## Opdrachten
 
-komt nog
+**Opdracht 4** \(klik [hier](https://repl.it/team/PythonAPI0/OpenWeatherData-uitgebreid) om hem te maken\)
+
+Maak een programma waarmee je de gebruiker de gelegenheid geeft om een stad in te voeren. Vervolgens wordt de windsnelheid van die stad getoond. Dit doe je net zo lang, totdat de gebruiker EINDE invoert i.p.v. de naam van een stad.
+
+_Voorbeeld_:
+
+> Voer een stad in: Amsterdam De windsnelheid in Amsterdam is: 6.3 Voer een stad in: New York De windsnelheid in New York is: 3.3 Voer een stad in: EINDE
 

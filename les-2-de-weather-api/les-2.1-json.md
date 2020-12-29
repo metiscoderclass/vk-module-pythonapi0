@@ -153,7 +153,7 @@ Deze persoon heeft dus drie voornamen.
 
 ## Opdrachten
 
-**Opdracht** 1 \(de opdracht maak je hier: [https://repl.it/team/PythonAPI0/JSON-games](https://repl.it/team/PythonAPI0/JSON-games)\)
+**Opdracht 2** \(de opdracht maak je [hier](https://repl.it/team/PythonAPI0/JSON-games)\)
 
 Maak een JSON bestand van jouw top 3 games. Geef per game aan:
 

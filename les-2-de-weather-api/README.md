@@ -2,11 +2,11 @@
 
 ## Het verschil
 
-Tijdens de vorige les hebben we een API gebruikt waar je _geen_ **ApiKey** voor nodig had. Nu gaan we met een API werken waar je dat _wel_ nodig gaat hebben.
+Tijdens de vorige les hebben we een API gebruikt waar je _geen_ ApiKey voor nodig had. Nu gaan we met een API werken waar je dat _wel_ nodig gaat hebben.
 
 ## OpenWeatherMap
 
-De API die we nu gaan gebruiken is de OpenWeatherMap \(OWM\). Het is gratis te gebruiken voor als je de huidige informatie over het weer wilt hebben.
+De API die we nu gaan gebruiken is de OpenWeatherMap \(OWM\). Het is gratis te gebruiken voor als je de huidige informatie over het weer wil hebben.
 
 Allereerst moeten we naar de website van OWM gaan. Je kunt bovenaan de pagina op de Sign Up knop drukken om een account aan te maken. Zodra je dat hebt gedaan ga je naar de tab API keys. Daar zie je een lange key met cijfers en letters: het is een supergroot hexadecimaal getal! Dat is de ApiKey die je nodig hebt!
 
@@ -20,7 +20,7 @@ Hiervoor gebruiken we een bestand met de naam `.env`. Daar zetten we dan de ApiK
 
 Dus:
 
-* Maak een bestand in je project en noem hem `.env`
+* Maak een bestand in je project en noem hem .env
 * Zet vervolgens in dat bestand de regel: `APIKEY=(jouw api key)`
 
   Uiteraard moet je `(jouw api key)` vervangen door de key die je van OpenWeatherMap hebt gekregen.

@@ -8,7 +8,9 @@ Allereerst moeten we de library json importeren:
 import json
 ```
 
-Als we nu een string hebben met daarin json, dan moeten we dat omzetten naar een echt json object. En dat is Python dan gewoon een dictionary. Dit omzetten doen we met de functie `json.loads()`. Voorbeeld:
+Als we nu een string hebben met daarin json, dan moeten we dat omzetten naar een echt json object. En dat is in Python dan gewoon een dictionary. Dit omzetten doen we met de functie `json.loads()`. 
+
+Voorbeeld:
 
 ```python
 import json
@@ -25,14 +27,16 @@ json_string = '''
 object_person = json.loads(json_string)
 ```
 
-De variabele object\_person is nu een dictionary. Hij bevat 4 keys, te weten:
+De variabele `object_person` is nu een dictionary. Hij bevat 4 keys, te weten:
 
-* first\_name
-* last\_name
-* online
-* age
+* `first_name`
+* `last_name`
+* `online`
+* `age`
 
 Met de module Python-3 heb je geleerd hoe je dictionaries kan gebruiken. We printen de voornaam en achternaam uit:
+
+{% embed url="https://repl.it/@hakkas/JSON-voorbeeld?lite=true" %}
 
 Laten we nu een iets complexer JSON string nemen. Eentje met een ander object als value. Schematisch ziet dat er zo uit:
 
@@ -67,5 +71,19 @@ En nu een JSON object met een array erin. Arrays worden omgezet naar Python lijs
 
 ## Opdrachten
 
-komt nog
+**Opdracht 3** \(klik [hier](https://repl.it/team/PythonAPI0/Voorbeeld-JSON-met-Python-verwerken) om de opdracht te maken\)
+
+Je krijgt een JSON bestand met wat quizvragen.  
+****Print alle vragen met de bijbehorende antwoorden uit. Het resultaat moet als volgt zijn:
+
+> Which one is a correct teamname in the NBA?  
+> Golden State Warriors  
+> 5 + 7 = ?  
+> 12  
+> 12 - 8 = ?  
+> 4
+
+
+
+\*\*\*\*
 

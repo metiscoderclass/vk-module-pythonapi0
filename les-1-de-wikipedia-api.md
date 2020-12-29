@@ -74,7 +74,7 @@ Dit was je eerste kennismaking met een API. Je mag het programma ook hier uittes
 
 ## Opdrachten
 
-**Opdracht 1** \(klik hier om hem te maken [https://repl.it/team/PythonAPI0/LOTR-random-quote](https://repl.it/team/PythonAPI0/LOTR-random-quote)\)
+**Opdracht 1** \(klik [hier](https://repl.it/team/PythonAPI0/LOTR-random-quote) om hem te maken\)
 
 Een andere leuke API is de random Lord of the Rings quote API die je hier kunt vinden: [https://lotr-random-quote-api.herokuapp.com/api/quote](https://lotr-random-quote-api.herokuapp.com/api/quote)
 
