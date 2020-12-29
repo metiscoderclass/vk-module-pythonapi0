@@ -6,9 +6,7 @@ Het formaat van de data die je terug hebt gekregen van de OpenWeather API heet _
 
 Als je de gegevens van een programma beschikbaar wilt stellen voor andere programma's, dan moet je een formaat bedenken dat beide programma's ondersteunen en begrijpen.
 
-{% hint style="info" %}
 **Voorbeeld**: Stel dat ik een programma heb geschreven met een database waarin ik alle voetbalwedstrijden en uitslagen bijhoud die ooit zijn gespeeld. En stel dat anderen geïnteresseerd zouden zijn in deze gegevens. Dan kan ik middels een API deze gegevens beschikbaar stellen. Maar in welk formaat moet ik die gegevens opsturen? Het antwoord is **JSON**.
-{% endhint %}
 
 Vroeger bedachten softwarebedrijven wel eens een eigen formaat. Leuk en aardig, maar als ieder bedrijf zijn eigen formaat bedenkt, dan is dat niet handig. Men gebruikte ook wel eens het CSV-formaat. CSV staat voor _Comma Seperated Value_. Een voorbeeld van zo'n bestand:
 
@@ -18,7 +16,7 @@ Year,Make,Model
 2000,Mercury,Cougar
 ```
 
-Zoals de naam zegt: de waarden worden onderscheiden door komma's. Heel handig voor gegevens die je mooi in een tabel kan weergeven. Maar hoe zet je complexere gegevens hierin? Voor als je bijvoorbeeld hiërarchie wilt aanbrengen in je gegevens? Of je wilt je gegevens beter beschrijven? In dat geval kun je kiezen voor iets nieuwers, iets beters, iets wat veel flexibeler te gebruiken is: _JSON_.
+Zoals de naam zegt: de waarden worden onderscheiden door komma's. Heel handig voor gegevens die je mooi in een tabel kan weergeven. Maar hoe zet je complexere gegevens hierin? Voor als je bijvoorbeeld hiërarchie wilt aanbrengen in de gegevens? Of je wilt je gegevens beter beschrijven? In dat geval kun je kiezen voor iets nieuwers, iets beters, iets wat veel flexibeler te gebruiken is: _JSON_.
 
 Verreweg de meeste Web API's werken met JSON. Roep je een API methode aan, dan krijg je JSON terug. Zoals ook de OpenWeatherMap API dat doet.
 
@@ -153,7 +151,7 @@ Deze persoon heeft dus drie voornamen.
 
 ## Opdrachten
 
-**Opdracht 2** \(de opdracht maak je [hier](https://repl.it/team/PythonAPI0/JSON-games)\)
+**Opdracht** 1 \(de opdracht maak je hier: [https://repl.it/team/PythonAPI0/JSON-games](https://repl.it/team/PythonAPI0/JSON-games)\)
 
 Maak een JSON bestand van jouw top 3 games. Geef per game aan:
 
