@@ -99,7 +99,7 @@ We hebben nu een leuk weerstationnetje gemaakt. Maak nu de volgende opdrachten.
 
 ## Opdrachten
 
-**Opdracht 4** \(klik [hier](https://repl.it/team/PythonAPI0/OpenWeatherData-uitgebreid) om hem te maken\)
+**Opdracht 4**
 
 Maak een programma waarmee je de gebruiker de gelegenheid geeft om een stad in te voeren. Vervolgens wordt de windsnelheid van die stad getoond. Dit doe je net zo lang, totdat de gebruiker EINDE invoert i.p.v. de naam van een stad.
 
