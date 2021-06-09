@@ -1,4 +1,4 @@
-# Eindopdracht
+# Eindopdracht-1
 
 Met de eindopdracht moet je bewijzen dat je een Web API kunt gebruiken en met JSON kunt werken. 
 
