@@ -25,7 +25,7 @@ from gql.transport.aiohttp import AIOHTTPTransport
 
 
 # nu moeten we de GraphQL endpoint aangeven
-transport = AIOHTTPTransport(url="https://www.badgecraft.eu/api/graphql")
+transport = AIOHTTPTransport(url="https://swapi-graphql.netlify.app/.netlify/functions/index")
 
 # Create a GraphQL client using the defined transport
 client = Client(transport=transport, fetch_schema_from_transport=True)
