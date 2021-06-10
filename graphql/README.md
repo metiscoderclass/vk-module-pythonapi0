@@ -8,8 +8,6 @@ Hier een filmpje met een korte introductie in GraphQL. Je hoeft nog niet alles t
 
 {% embed url="https://www.youtube.com/watch?v=eIQh02xuVw4" %}
 
-
-
 In dit hoofdstuk leer je hoe je tegen een GraphQL API kunt praten.
 
 ## \*\*\*\*
