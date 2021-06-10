@@ -10,7 +10,7 @@ Kort samengevat komt het op het volgende neer:
 {% hint style="warning" %}
 **Belangrijk!**
 
-De _**endpoint**_ voor BadgeCraft is: [https://www.badgecraft.eu/api/graphql](https://www.badgecraft.eu/api/graphql)  
+De _**Endpoint**_ voor BadgeCraft is: [https://www.badgecraft.eu/api/graphql](https://www.badgecraft.eu/api/graphql)  
 De _**Playground**_ van de BadgeCraft API is: [https://www.badgecraft.eu/api/graphiql](https://www.badgecraft.eu/api/graphiql)
 {% endhint %}
 

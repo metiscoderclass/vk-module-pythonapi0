@@ -1,5 +1,7 @@
 # GraphQL en de playground
 
+
+
 ## **Playground**
 
 Een GraphQL API heeft vaak een Playground: een webinterface waar je snel queries kunt maken en uittesten. 
